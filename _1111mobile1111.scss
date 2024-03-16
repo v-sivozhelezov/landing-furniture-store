@@ -1,0 +1,374 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        margin-bottom: 32px;
+
+        &__input {
+            display: none;
+        }
+
+        &__header {
+            height: auto;
+            padding-top: 50px;
+            padding-bottom: 16px;
+            margin-bottom: 31px;
+            border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__content {
+            margin-top: 36px;
+        }
+    }
+
+    .header {
+        padding-bottom: 10px;
+
+        &__logo {
+            width: 99px;
+        }
+    }
+
+    .menu,
+    .search {
+        display: none;
+    }
+
+    .menuMob {
+        display: flex;
+        gap: 35px;
+        align-items: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__heading {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 59px;
+            text-align: center;
+            color: #FFFFFF;
+            margin-top: 0;
+        }
+
+        &__slogan {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        &__link {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+            color: #FFFFFF;
+            text-decoration: underline;
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    .contentBar {
+
+        &__box {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        }
+
+        &__heading {
+            margin-top: 32px;
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        &__img {
+            grid-column: 1 / -1;
+            height: 375px;
+            font-size: 28px;
+            line-height: 34px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;     
+        }
+
+        &__img-big {
+            height: 244px;
+        }
+    }
+
+    .product {
+        margin-top: 32px;
+        &__heading-mob {
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        &__box-mob {
+            row-gap: 32px;
+        }
+
+        &__name {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__info {
+            margin-bottom: 8px;
+        }
+
+        &__sale {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__price {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+    .linkBox {
+        &__link {
+            text-decoration: underline;
+
+            &:active {
+                color: #000;
+                transition: none;
+            }
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    .footer {
+        margin-top: 32px;
+
+        &__content {
+            justify-content: center;
+            gap: 32px;
+        }
+
+        &__info {
+            gap: 100px;
+        }
+
+        &__link {
+          
+            &:active {
+                text-decoration: underline;
+                color: #000;
+                transition: none;
+            }
+
+            &:after {
+                display: none;
+            }
+        }      
+    }
+    
+    .contact {
+
+        &__social:hover {
+            fill: #888;
+            scale: 1;
+            transition: none;
+        }
+
+        &__social:active path {
+            fill: #000;
+            transition: fill .3s;
+        }
+
+        &__social:active {
+            transition: scale .3s;
+            scale: 1.05;
+        }
+    }
+
+
+    // стили каталога
+
+    .top {
+        &__content-catalog {
+            margin-top: 90px;
+        }
+    }
+
+    .crumbs {
+
+        &__link-mob {
+            font-size: 14px;
+            text-decoration: underline;
+           
+            &:active {
+                text-decoration: underline;
+                color: #000;
+                transition: none;
+            }
+
+            &:after {
+                display: none;
+            }
+
+        }
+
+        &__slash-mob {
+            font-size: 14px;
+        }
+    }
+
+    .select {
+        width: 270px;
+
+        &__sorting {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+    .formFoot {
+
+        &__button {
+
+            &:hover {
+                background: rgba(222, 215, 215, 0.41);
+                border: 1px solid #FFFFFF;
+                color: #000;
+   
+                &:active {
+                    transition: none;
+                    scale: 1;
+                    box-shadow: none;
+                    background: #000;
+                    border: 1px solid #000;
+                    color: #FFFFFF;
+                }
+            }
+        }
+
+    }
+
+    // стили корзины
+
+    .top {
+        &_heading_basket {
+            margin-top: 53px;
+        }
+
+        &-basket {
+            background-position: 70%;
+        }
+    }
+
+    .order {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0px 14px;
+
+        &__left {
+            grid-column: span 4;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        &__img {
+            display: none;
+        }
+
+        &__infoBox {
+            gap: 8px;
+        }
+
+        &__name {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__info {
+            font-size: 12px;
+            line-height: 15px;
+            margin-bottom: 7px;
+        }
+
+        &__price {
+            font-size: 12px;
+            line-height: 15px;
+            margin-bottom: 7px;
+        }
+
+        &__link {
+          text-decoration: underline;
+
+            &:active {
+                color: #000;
+                transition: none;
+            }
+
+            &:after {
+                display: none;
+            }
+        }      
+
+        &__right {
+            grid-column: span 4;
+            margin-top: 48px;
+            margin-bottom: 16px;
+        }
+
+        &__buttonBox {
+            margin-top: 0;
+        }
+
+        &__button {
+            font-size: 12px;
+            line-height: 15px;
+
+            &-checkout {
+                font-size: 16px;
+                line-height: 20px; 
+                -webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
+                animation: pulsate-fwd 1s ease-in-out infinite both;
+            }
+
+            &:hover {
+                border: 1px solid #000000;
+                background-color: transparent;
+                grid-column: span 4;
+                color: #020202;
+                transition: none;
+                scale: 1;
+                box-shadow: none;
+                animation: none;
+            }
+            
+            &:active {
+                transition: none;
+                scale: 1;
+                box-shadow: none;
+                background: #000;
+                border: 1px solid #000;
+                color: #FFFFFF;
+            }
+        }
+    }
+}

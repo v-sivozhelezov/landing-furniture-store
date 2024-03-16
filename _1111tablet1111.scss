@@ -1,0 +1,243 @@
+@media (max-width: 1024px) {
+
+    .center {
+        padding-left: calc(50% - 393px);
+        padding-right: calc(50% - 393px);
+    }
+
+    .content {
+        &__link {
+            text-decoration: underline;
+
+            &:after {
+                display: none;
+            }
+        }
+
+    }
+
+    .contentBar {
+        &__box {
+            gap: 30px;
+        }
+
+        &__img {
+            height: 266px;
+        }
+    }
+
+    .product {
+        &__box-tablet {
+            column-gap: 29px;
+            row-gap: 39px;
+        }
+    }
+
+    .linkBox {
+        &__link {
+            text-decoration: underline;
+
+            &:active {
+                color: #000;
+                transition: none;
+            }
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    .footer {
+
+        &__logo {
+            display: none;
+        }
+
+        &__link {
+
+            &:active {
+                text-decoration: underline;
+                color: #000;
+                transition: none;
+            }
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    .contact {
+
+        &__social:hover {
+            fill: #888;
+            scale: 1;
+            transition: none;
+        }
+
+        &__social:active path {
+            fill: #000;
+            transition: fill .3s;
+        }
+
+        &__social:active {
+            transition: scale .3s;
+            scale: 1.05;
+        }
+    }
+
+    .formFoot {
+
+        &__email {
+            width: 268px;
+        }
+
+        &__button {
+            width: 268px;
+
+            &:hover {
+                background: rgba(222, 215, 215, 0.41);
+                border: 1px solid #FFFFFF;
+                color: #000;
+
+
+                &:active {
+                    transition: none;
+                    scale: 1;
+                    box-shadow: none;
+                    background: #000;
+                    border: 1px solid #000;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+    // стили каталога
+
+    .crumbs {
+
+        &__link-mob {
+            text-decoration: underline;
+
+            &:active {
+                text-decoration: underline;
+                color: #000;
+                transition: none;
+            }
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    // стили корзины
+
+    .order {
+        grid-template-columns: repeat(8, 1fr);
+        row-gap: 64px;
+
+        &__link {
+            text-decoration: underline;
+
+            &:active {
+                color: #000;
+                transition: none;
+            }
+
+            &:after {
+                display: none;
+            }
+        }
+
+        &__button {
+
+            &-checkout {
+                -webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
+                animation: pulsate-fwd 1s ease-in-out infinite both;
+            }
+
+            &:hover {
+                border: 1px solid #000000;
+                background-color: transparent;
+                color: #020202;
+                transition: none;
+                scale: 1;
+                box-shadow: none;
+                animation: none;
+            }
+
+            &:active {
+                transition: none;
+                scale: 1;
+                box-shadow: none;
+                background: #000;
+                border: 1px solid #000;
+                color: #FFFFFF;
+            }
+        }
+
+    }
+}
+
+// дополнительный медиазапрос
+
+@media (min-width: 768px) and (max-width: 833px) {
+
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .product {
+        &__card {
+            width: 345px;
+        }
+
+        &__link {
+            text-decoration: underline;
+
+            &:active {
+                color: #000;
+                transition: none;
+            }
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    .order {
+
+        &__button {
+
+            &-checkout {
+                -webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
+                animation: pulsate-fwd 1s ease-in-out infinite both;
+            }
+
+            &:hover {
+                border: 1px solid #000000;
+                background-color: transparent;
+                grid-column: span 4;
+                color: #020202;
+                transition: none;
+                scale: 1;
+                box-shadow: none;
+                animation: none;
+            }
+
+            &:active {
+                transition: none;
+                scale: 1;
+                box-shadow: none;
+                background: #000;
+                border: 1px solid #000;
+                color: #FFFFFF;
+            }
+        }
+    }
+}

@@ -1,0 +1,124 @@
+.top-catalog {
+    background-image: url(img/catalog_background.jpg);
+    height: 400px;
+}
+
+.top__content-catalog {
+    margin-top: 127px;
+}
+
+.menuLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 16px;
+    &-catalog {
+        margin-bottom: 32px;
+    }
+
+    &__header {
+        display: none;
+    }
+}
+
+.crumbs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    &__link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #888;
+        text-decoration: none;
+        transition: all .3s;
+        position: relative;
+
+        &:hover {
+            color: #000000;
+            transition: all .3s;
+        }
+
+        &:after {
+            display: block;
+            content: "";
+            background-color: #888;
+            height: 1px;
+            width: 0%;
+            left: 50%;
+            position: absolute;
+            -webkit-transition: width .3s ease-in-out;
+            -moz--transition: width .3s ease-in-out;
+            transition: width .3s ease-in-out;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+
+        &:hover:after {
+            width: 100%;
+            background-color: #000000;
+        }
+    }
+
+    &__slash {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: #888;
+    }
+}
+
+.select {
+    box-sizing: border-box;
+    width: 305px;
+    height: 41px;
+    border: 1px solid #C4C4C4;
+    border-radius: 20px;
+    display: flex;
+
+    &__sorting {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        border: none;
+        margin-left: 14px;
+        margin-right: 14px;
+        outline: none;
+        background-image: url(img/select.svg);
+        background-repeat: no-repeat, repeat;
+        background-position: right 0.1em top 50%, 0 0;
+        background-size: 1em auto, 100%;
+        box-sizing: border-box;
+    }
+
+    &__text {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+    }
+}
+
+.product {
+
+    &-catalog {
+        margin-top: 0;
+    }
+
+    &__heading-catalog {
+        display: none;
+    }
+}
